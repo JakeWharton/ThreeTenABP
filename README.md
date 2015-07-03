@@ -42,7 +42,7 @@ loader for parsing it efficiently.
 Why not use Joda-Time?
 ----------------------
 
-Joda-time has a very large API which brings with it a very large binary size and large method
+Joda-Time has a very large API which brings with it a very large binary size and large method
 count. The creator of both JSR-310 and Joda-Time has also said that while Joda-Time isn't broken,
 it does [have design flaws][flaws].
 
