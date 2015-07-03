@@ -1,0 +1,47 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+  compile group: 'org.threeten', name: 'threetenbp', version: '1.3-SNAPSHOT', classifier: 'no-tzdb'
+
+  androidTestCompile rootProject.ext.junit
+  androidTestCompile rootProject.ext.supportTestRunner
+  androidTestCompile rootProject.ext.truth
+}
+
+def isCi() {
+  return 'true'.equals(System.getenv('CI'))
+}
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+    minSdkVersion rootProject.ext.minSdkVersion
+
+    testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_7
+    targetCompatibility JavaVersion.VERSION_1_7
+  }
+
+  dexOptions {
+    preDexLibraries = !isCi()
+  }
+}
+
+if (isCi()) {
+  println 'Running on CI. Adding task to start emulator.'
+
+  task startEmulator << {
+    "$rootDir/gradle/start-emulator.sh".execute().waitFor()
+  }
+
+  android.testVariants.all { variant ->
+    variant.connectedInstrumentTest.dependsOn startEmulator
+  }
+}
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
