@@ -1,0 +1,32 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+  compile project(':threetenabp')
+
+  androidTestCompile rootProject.ext.junit
+  androidTestCompile rootProject.ext.supportTestRunner
+  androidTestCompile rootProject.ext.supportTestRules
+}
+
+android {
+  compileSdkVersion rootProject.ext.compileSdkVersion
+  buildToolsVersion rootProject.ext.buildToolsVersion
+
+  defaultConfig {
+    applicationId 'com.jakewharton.threetenabp.sample'
+    minSdkVersion rootProject.ext.minSdkVersion
+    targetSdkVersion 22
+    versionCode 1
+    versionName '1.0'
+
+    testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+  }
+
+  buildTypes {
+    debug {
+      minifyEnabled true
+      proguardFiles getDefaultProguardFile('proguard-android.txt')
+      testProguardFiles file('test-proguard-rules.pro')
+    }
+  }
+}
