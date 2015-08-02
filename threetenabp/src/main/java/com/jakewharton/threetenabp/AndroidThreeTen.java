@@ -12,7 +12,7 @@ public final class AndroidThreeTen {
   private static final AtomicBoolean initialized = new AtomicBoolean();
 
   public static void init(Application application) {
-    if (initialized.compareAndSet(true, true)) {
+    if (initialized.getAndSet(true)) {
       return;
     }
 
