@@ -22,4 +22,5 @@ ext {
   truth = 'com.google.truth:truth:0.27'
   supportTestRunner = 'com.android.support.test:runner:0.3'
   supportTestRules = 'com.android.support.test:rules:0.3'
+  robolectric = 'org.robolectric:robolectric:3.0'
 }
