@@ -30,6 +30,12 @@ android {
   dexOptions {
     preDexLibraries = !isCi()
   }
+
+  buildTypes {
+    release {
+      consumerProguardFiles file('consumer-proguard-rules.pro')
+    }
+  }
 }
 
 apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
