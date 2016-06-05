@@ -5,6 +5,7 @@
   <application
       android:name=".ExamplesApp"
       android:label="ThreeTenABP"
+      android:allowBackup="false"
       >
     <activity android:name=".Examples">
       <intent-filter>

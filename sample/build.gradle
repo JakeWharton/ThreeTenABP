@@ -18,7 +18,7 @@ android {
   defaultConfig {
     applicationId 'com.jakewharton.threetenabp.sample'
     minSdkVersion rootProject.ext.minSdkVersion
-    targetSdkVersion 22
+    targetSdkVersion 23
     versionCode 1
     versionName '1.0'
 
@@ -31,5 +31,8 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android.txt')
       testProguardFiles file('test-proguard-rules.pro')
     }
+  }
+  lintOptions {
+    disable 'MissingApplicationIcon','GoogleAppIndexingWarning','SetTextI18n'
   }
 }
