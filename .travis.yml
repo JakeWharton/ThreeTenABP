@@ -36,3 +36,7 @@ sudo: false
 cache:
   directories:
     - $HOME/.gradle
+
+after_failure:
+    - find . -name "lint-results-*.xml" | xargs cat
+
