@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 dependencies {
-  compile group: 'org.threeten', name: 'threetenbp', version: '1.3.1', classifier: 'no-tzdb'
+  compile group: 'org.threeten', name: 'threetenbp', version: '1.3.2', classifier: 'no-tzdb'
 
   androidTestCompile rootProject.ext.junit
   androidTestCompile rootProject.ext.supportTestRunner
@@ -35,6 +35,11 @@ android {
     release {
       consumerProguardFiles file('consumer-proguard-rules.pro')
     }
+  }
+
+  lintOptions {
+    textReport true
+    textOutput 'stdout'
   }
 }
 
