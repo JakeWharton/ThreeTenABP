@@ -36,6 +36,11 @@ android {
       consumerProguardFiles file('consumer-proguard-rules.pro')
     }
   }
+
+  lintOptions {
+    textReport true
+    textOutput 'stdout'
+  }
 }
 
 apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
