@@ -15,8 +15,8 @@ allprojects {
 
 ext {
   minSdkVersion = 15
-  compileSdkVersion = 22
-  buildToolsVersion = '22.0.1'
+  compileSdkVersion = 24
+  buildToolsVersion = '24.0.1'
 
   junit = 'junit:junit:4.12'
   truth = 'com.google.truth:truth:0.27'
