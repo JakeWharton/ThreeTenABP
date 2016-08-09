@@ -17,11 +17,19 @@ public final class AndroidThreeTen {
     }
 
     TzdbZoneRulesProvider provider;
+    InputStream is = null;
     try {
-      InputStream is = application.getAssets().open("org/threeten/bp/TZDB.dat");
+      is = application.getAssets().open("org/threeten/bp/TZDB.dat");
       provider = new TzdbZoneRulesProvider(is);
     } catch (IOException e) {
       throw new IllegalStateException("TZDB.dat missing from assets.", e);
+    } finally {
+      if (is != null) {
+        try {
+          is.close();
+        } catch (IOException ignored) {
+        }
+      }
     }
 
     ZoneRulesProvider.registerProvider(provider);
