@@ -12,10 +12,12 @@ import org.threeten.bp.zone.ZoneRulesProvider;
 public final class AndroidThreeTen {
   private static final AtomicBoolean initialized = new AtomicBoolean();
 
+  @Deprecated
   public static void init(Application application) {
     init((Context) application);
   }
 
+  @Deprecated
   public static void init(Context context) {
     if (initialized.getAndSet(true)) {
       return;
