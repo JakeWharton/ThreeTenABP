@@ -6,10 +6,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.concurrent.atomic.AtomicBoolean;
 import org.threeten.bp.zone.TzdbZoneRulesProvider;
+import org.threeten.bp.zone.ZoneRulesInitializer;
 import org.threeten.bp.zone.ZoneRulesProvider;
+
+import static org.threeten.bp.zone.ZoneRulesInitializer.DO_NOTHING;
 
 /** Android-specific initializer for the JSR-310 library. */
 public final class AndroidThreeTen {
+  static {
+    ZoneRulesInitializer.setInitializer(DO_NOTHING);
+  }
+
   private static final AtomicBoolean initialized = new AtomicBoolean();
 
   public static void init(Application application) {
