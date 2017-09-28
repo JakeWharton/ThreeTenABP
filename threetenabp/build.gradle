@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 dependencies {
-  compile group: 'org.threeten', name: 'threetenbp', version: '1.3.3', classifier: 'no-tzdb'
+  compile group: 'org.threeten', name: 'threetenbp', version: '1.3.6', classifier: 'no-tzdb'
 
   androidTestCompile rootProject.ext.junit
   androidTestCompile rootProject.ext.supportTestRunner
