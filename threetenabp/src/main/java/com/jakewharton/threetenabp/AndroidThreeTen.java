@@ -17,6 +17,10 @@ public final class AndroidThreeTen {
   }
 
   public static void init(Context context) {
+    init(context, "org/threeten/bp/TZDB.dat");
+  }
+
+  public static void init(Context context, String assetPath) {
     if (initialized.getAndSet(true)) {
       return;
     }
@@ -24,10 +28,10 @@ public final class AndroidThreeTen {
     TzdbZoneRulesProvider provider;
     InputStream is = null;
     try {
-      is = context.getAssets().open("org/threeten/bp/TZDB.dat");
+      is = context.getAssets().open(assetPath);
       provider = new TzdbZoneRulesProvider(is);
     } catch (IOException e) {
-      throw new IllegalStateException("TZDB.dat missing from assets.", e);
+      throw new IllegalStateException(assetPath + " missing from assets.", e);
     } finally {
       if (is != null) {
         try {

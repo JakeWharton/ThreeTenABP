@@ -4,6 +4,7 @@ buildscript {
   }
   dependencies {
     classpath 'com.android.tools.build:gradle:2.2.3'
+    classpath 'de.undercouch:gradle-download-task:3.3.0'
   }
 }
 
@@ -24,3 +25,12 @@ ext {
   supportTestRules = 'com.android.support.test:rules:0.3'
   robolectric = 'org.robolectric:robolectric:3.2.2'
 }
+
+apply plugin: 'de.undercouch.download'
+import de.undercouch.gradle.tasks.download.Download
+task downloadTZDB(type: Download) {
+    src 'https://github.com/ThreeTen/threetenbp/raw/master/src/main/resources/org/threeten/bp/TZDB.dat'
+    dest 'threetenabp/src/main/assets/org/threeten/bp/TZDB.dat'
+    overwrite true
+}
+
