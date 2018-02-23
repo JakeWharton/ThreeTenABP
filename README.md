@@ -16,6 +16,7 @@ Initialize the timezone information in your `Application.onCreate()` method:
 }
 ```
 
+Samples and snippets can be found [here](https://gist.github.com/mscharhag/9195718)
 
 
 Why JSR-310?
