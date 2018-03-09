@@ -1,20 +1,15 @@
 apply plugin: 'com.android.library'
 
 dependencies {
-  compile group: 'org.threeten', name: 'threetenbp', version: '1.3.6', classifier: 'no-tzdb'
+  api group: 'org.threeten', name: 'threetenbp', version: '1.3.6', classifier: 'no-tzdb'
 
-  androidTestCompile rootProject.ext.junit
-  androidTestCompile rootProject.ext.supportTestRunner
-  androidTestCompile rootProject.ext.truth
-}
-
-def isCi() {
-  return 'true'.equals(System.getenv('CI'))
+  androidTestImplementation rootProject.ext.junit
+  androidTestImplementation rootProject.ext.supportTestRunner
+  androidTestImplementation rootProject.ext.truth
 }
 
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
-  buildToolsVersion rootProject.ext.buildToolsVersion
 
   defaultConfig {
     minSdkVersion rootProject.ext.minSdkVersion
@@ -27,13 +22,14 @@ android {
     targetCompatibility JavaVersion.VERSION_1_7
   }
 
-  dexOptions {
-    preDexLibraries = !isCi()
-  }
-
   lintOptions {
     textReport true
     textOutput 'stdout'
+  }
+
+  // TODO replace with https://issuetracker.google.com/issues/72050365 once released.
+  libraryVariants.all {
+    it.generateBuildConfig.enabled = false
   }
 }
 

@@ -1,27 +1,23 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-  compile project(':threetenabp')
+  implementation project(':threetenabp')
 
-  androidTestCompile rootProject.ext.junit
-  androidTestCompile rootProject.ext.supportTestRunner
-  androidTestCompile rootProject.ext.supportTestRules
+  androidTestImplementation rootProject.ext.junit
+  androidTestImplementation rootProject.ext.supportTestRunner
+  androidTestImplementation rootProject.ext.supportTestRules
 
-  testCompile rootProject.ext.junit
-  testCompile rootProject.ext.robolectric
-
-  // because of https://github.com/robolectric/robolectric/issues/1932
-  testCompile 'org.khronos:opengl-api:gl1.1-android-2.1_r1'
+  testImplementation rootProject.ext.junit
+  testImplementation rootProject.ext.robolectric
 }
 
 android {
   compileSdkVersion rootProject.ext.compileSdkVersion
-  buildToolsVersion rootProject.ext.buildToolsVersion
 
   defaultConfig {
     applicationId 'com.jakewharton.threetenabp.sample'
     minSdkVersion rootProject.ext.minSdkVersion
-    targetSdkVersion 22
+    targetSdkVersion 27
     versionCode 1
     versionName '1.0'
 
