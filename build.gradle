@@ -1,16 +1,16 @@
 buildscript {
   repositories {
-    google()
     jcenter()
+    google()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.0.1'
+    classpath 'com.android.tools.build:gradle:3.1.1'
   }
 }
 
 allprojects {
   repositories {
-    mavenCentral()
+    jcenter()
     google()
   }
 }
@@ -20,7 +20,7 @@ ext {
   compileSdkVersion = 27
 
   junit = 'junit:junit:4.12'
-  truth = 'com.google.truth:truth:0.39'
+  truth = 'com.google.truth:truth:0.40'
   supportTestRunner = 'com.android.support.test:runner:1.0.1'
   supportTestRules = 'com.android.support.test:rules:1.0.1'
   robolectric = 'org.robolectric:robolectric:3.7.1'
