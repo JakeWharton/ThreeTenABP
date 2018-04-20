@@ -1,6 +1,15 @@
 Change Log
 ==========
 
+Version 1.1.0 *(2018-04-20)*
+----------------------------
+
+ * Update ThreeTenBP dependency to 1.3.6 ([change log][threeten136]).
+ * Update time zone data to 2017b.
+ * New: Timezone database is now lazily initialized and no longer blocks application startup.
+ * Fix: Useless `BuildConfig` class is no longer included.
+
+
 Version 1.0.5 *(2017-02-02)*
 ----------------------------
 
@@ -46,3 +55,4 @@ Initial release.
 
 
  [threeten133]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.3
+ [threeten136]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.6
