@@ -1,6 +1,12 @@
 Change Log
 ==========
 
+Version 1.1.1 *(2018-10-12)*
+----------------------------
+
+* Update ThreeTenBP dependency to 1.3.7 ([change log][threeten137]).
+
+
 Version 1.1.0 *(2018-04-20)*
 ----------------------------
 
@@ -56,3 +62,4 @@ Initial release.
 
  [threeten133]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.3
  [threeten136]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.6
+ [threeten137]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.7
