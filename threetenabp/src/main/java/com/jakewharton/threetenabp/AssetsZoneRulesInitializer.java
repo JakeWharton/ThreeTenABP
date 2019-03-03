@@ -9,9 +9,11 @@ import org.threeten.bp.zone.ZoneRulesProvider;
 
 final class AssetsZoneRulesInitializer extends ZoneRulesInitializer {
   private final Context context;
+  private final String assetPath;
 
-  AssetsZoneRulesInitializer(Context context) {
+  AssetsZoneRulesInitializer(Context context, String assetPath) {
     this.context = context;
+    this.assetPath = assetPath;
   }
 
   @Override protected void initializeProviders() {
@@ -19,10 +21,10 @@ final class AssetsZoneRulesInitializer extends ZoneRulesInitializer {
 
     InputStream is = null;
     try {
-      is = context.getAssets().open("org/threeten/bp/TZDB.dat");
+      is = context.getAssets().open(assetPath);
       provider = new TzdbZoneRulesProvider(is);
     } catch (IOException e) {
-      throw new IllegalStateException("TZDB.dat missing from assets.", e);
+      throw new IllegalStateException(assetPath + " missing from assets.", e);
     } finally {
       if (is != null) {
         try {
