@@ -6,6 +6,7 @@ dependencies {
   androidTestImplementation rootProject.ext.junit
   androidTestImplementation rootProject.ext.testRunner
   androidTestImplementation rootProject.ext.truth
+  androidTestUtil rootProject.ext.testOrchestrator
 }
 
 android {
@@ -15,6 +16,10 @@ android {
     minSdkVersion rootProject.ext.minSdkVersion
 
     testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+  }
+
+  testOptions {
+    execution 'ANDROIDX_TEST_ORCHESTRATOR'
   }
 
   compileOptions {
