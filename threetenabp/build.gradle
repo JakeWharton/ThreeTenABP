@@ -4,7 +4,7 @@ dependencies {
   api group: 'org.threeten', name: 'threetenbp', version: '1.3.8', classifier: 'no-tzdb'
 
   androidTestImplementation rootProject.ext.junit
-  androidTestImplementation rootProject.ext.supportTestRunner
+  androidTestImplementation rootProject.ext.testRunner
   androidTestImplementation rootProject.ext.truth
 }
 
@@ -14,7 +14,7 @@ android {
   defaultConfig {
     minSdkVersion rootProject.ext.minSdkVersion
 
-    testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
   }
 
   compileOptions {
