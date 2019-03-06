@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 1.2.0 *(2019-03-06)*
+----------------------------
+
+ * Add `AndroidThreeTen.init(Context, String)` overload for supplying a path to a custom timezone
+   database stored in assets.
+
+
 Version 1.1.2 *(2019-02-15)*
 ----------------------------
 
