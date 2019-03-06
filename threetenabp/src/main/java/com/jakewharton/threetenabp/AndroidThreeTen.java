@@ -20,6 +20,6 @@ public final class AndroidThreeTen {
   }
 
   private AndroidThreeTen() {
-    throw new AssertionError("No instances.");
+    throw new AssertionError();
   }
 }
