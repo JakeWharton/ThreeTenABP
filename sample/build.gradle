@@ -4,8 +4,8 @@ dependencies {
   implementation project(':threetenabp')
 
   androidTestImplementation rootProject.ext.junit
-  androidTestImplementation rootProject.ext.supportTestRunner
-  androidTestImplementation rootProject.ext.supportTestRules
+  androidTestImplementation rootProject.ext.testRunner
+  androidTestImplementation rootProject.ext.testRules
 
   testImplementation rootProject.ext.junit
   testImplementation rootProject.ext.robolectric
@@ -21,7 +21,7 @@ android {
     versionCode 1
     versionName '1.0'
 
-    testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
+    testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
   }
 
   buildTypes {

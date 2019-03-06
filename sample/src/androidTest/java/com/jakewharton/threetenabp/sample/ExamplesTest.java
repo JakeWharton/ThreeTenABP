@@ -1,15 +1,12 @@
 package com.jakewharton.threetenabp.sample;
 
-import android.support.test.rule.ActivityTestRule;
-import android.support.test.runner.AndroidJUnit4;
+import androidx.test.rule.ActivityTestRule;
 import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.threeten.bp.Instant;
 
 import static org.junit.Assert.assertNotEquals;
 
-@RunWith(AndroidJUnit4.class)
 public final class ExamplesTest {
   @Rule public final ActivityTestRule<Examples> examplesActivity =
       new ActivityTestRule<>(Examples.class);
