@@ -14,8 +14,12 @@ public final class AndroidThreeTen {
   }
 
   public static void init(Context context) {
+    init(context, "org/threeten/bp/TZDB.dat");
+  }
+
+  public static void init(Context context, String assetPath) {
     if (!initialized.getAndSet(true)) {
-      ZoneRulesInitializer.setInitializer(new AssetsZoneRulesInitializer(context));
+      ZoneRulesInitializer.setInitializer(new AssetsZoneRulesInitializer(context, assetPath));
     }
   }
 

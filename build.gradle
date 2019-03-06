@@ -27,6 +27,7 @@ ext {
 
   junit = 'junit:junit:4.12'
   truth = 'com.google.truth:truth:0.43'
+  testOrchestrator = 'androidx.test:orchestrator:1.1.1'
   testRunner = 'androidx.test:runner:1.1.1'
   testRules = 'androidx.test:rules:1.1.1'
   robolectric = 'org.robolectric:robolectric:3.7.1'
