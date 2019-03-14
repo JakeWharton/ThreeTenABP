@@ -16,6 +16,8 @@ android {
     minSdkVersion rootProject.ext.minSdkVersion
 
     testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+
+    consumerProguardFiles 'consumer-proguard-rules.pro'
   }
 
   testOptions {
