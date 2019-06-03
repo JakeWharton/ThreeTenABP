@@ -87,3 +87,4 @@ Initial release.
  [threeten136]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.6
  [threeten137]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.7
  [threeten138]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.8
+ [threeten140]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.0
