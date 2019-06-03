@@ -1,6 +1,15 @@
 Change Log
 ==========
 
+Version 1.2.1 *(2019-06-03)*
+----------------------------
+
+ * Update ThreeTenBP dependency to 1.4.0 ([change log][threeten140]).
+ * Update time zone data to 2019a.
+ * Fix: Embed consumer R8/ProGuard rules to ensure serialization (e.g., through Parcelable) does not
+   lose any information.
+
+
 Version 1.2.0 *(2019-03-06)*
 ----------------------------
 
