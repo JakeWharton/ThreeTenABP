@@ -31,4 +31,5 @@ ext {
   testRunner = 'androidx.test:runner:1.1.1'
   testRules = 'androidx.test:rules:1.1.1'
   robolectric = 'org.robolectric:robolectric:3.7.1'
+  threetenbp = 'org.threeten:threetenbp:1.4.0:no-tzdb'
 }

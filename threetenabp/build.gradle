@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 
 dependencies {
-  api group: 'org.threeten', name: 'threetenbp', version: '1.4.0', classifier: 'no-tzdb'
+  api rootProject.ext.threetenbp
 
   androidTestImplementation rootProject.ext.junit
   androidTestImplementation rootProject.ext.testRunner
