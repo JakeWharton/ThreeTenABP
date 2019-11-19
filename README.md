@@ -16,6 +16,9 @@ Initialize the timezone information in your `Application.onCreate()` method:
 }
 ```
 
+That's it. Otherwise usage is the exact same as the ThreeTenBP library and you should consult
+its website for usage information: https://www.threeten.org/threetenbp/.
+
 
 
 Why JSR-310?
