@@ -2,9 +2,15 @@ buildscript {
   repositories {
     mavenCentral()
     google()
+    jcenter {
+      // Required for a dependency of Android lint.
+      content {
+        includeGroup 'org.jetbrains.trove4j'
+      }
+    }
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.4.1'
+    classpath 'com.android.tools.build:gradle:3.6.1'
   }
 }
 
@@ -23,13 +29,13 @@ allprojects {
 
 ext {
   minSdkVersion = 15
-  compileSdkVersion = 28
+  compileSdkVersion = 29
 
-  junit = 'junit:junit:4.12'
-  truth = 'com.google.truth:truth:0.43'
+  junit = 'junit:junit:4.13'
+  truth = 'com.google.truth:truth:1.0.1'
   testOrchestrator = 'androidx.test:orchestrator:1.1.1'
   testRunner = 'androidx.test:runner:1.1.1'
   testRules = 'androidx.test:rules:1.1.1'
   robolectric = 'org.robolectric:robolectric:3.7.1'
-  threetenbp = 'org.threeten:threetenbp:1.4.1:no-tzdb'
+  threetenbp = 'org.threeten:threetenbp:1.4.2:no-tzdb'
 }

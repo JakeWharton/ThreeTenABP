@@ -21,14 +21,14 @@ public final class ExamplesTest {
    * Assert that ProGuard has run and obfuscated a library type. This implicitly also tests the
    * embedded ProGuard rules in the library are correct since currently ProGuard fails without them.
    */
-  @Test public void proguardHappened() {
+  @Test public void minificationHappened() {
     Examples activity = examplesActivity.getActivity();
     Instant now = activity.now();
     assertNotEquals("Instant", now.getClass().getSimpleName());
   }
 
   /** Assert that date-time info is retained after serialization and deserialization. */
-  @Test public void proguardAllowsSerialization() throws Exception {
+  @Test public void minificationAllowsSerializationZonedDateTime() throws Exception {
     ZonedDateTime expected = examplesActivity.getActivity().hereAndNow();
 
     ByteArrayOutputStream out = new ByteArrayOutputStream();
