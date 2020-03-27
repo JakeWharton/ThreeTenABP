@@ -17,7 +17,7 @@ android {
   defaultConfig {
     applicationId 'com.jakewharton.threetenabp.sample'
     minSdkVersion rootProject.ext.minSdkVersion
-    targetSdkVersion 28
+    targetSdkVersion rootProject.ext.compileSdkVersion
     versionCode 1
     versionName '1.0'
 
@@ -27,7 +27,7 @@ android {
   buildTypes {
     debug {
       minifyEnabled true
-      testProguardFiles file('test-proguard-rules.pro')
+      testProguardFiles file('test-rules.pro')
     }
   }
 }

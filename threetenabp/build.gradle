@@ -17,7 +17,7 @@ android {
 
     testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
 
-    consumerProguardFiles 'consumer-proguard-rules.pro'
+    consumerProguardFiles 'consumer-rules.pro'
   }
 
   testOptions {
