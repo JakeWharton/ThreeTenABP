@@ -3,6 +3,11 @@ ThreeTen Android Backport
 
 An adaptation of the JSR-310 backport for Android.
 
+**Attention**: Development on this library is winding down. Please consider switching to
+Android Gradle plugin 4.0, `java.time.*`, and its
+[core library desugaring](https://developer.android.com/studio/preview/features#j8-desugar) feature
+in the coming months.
+
 
 
 Usage
@@ -59,7 +64,7 @@ Download
 --------
 
 ```groovy
-implementation 'com.jakewharton.threetenabp:threetenabp:1.2.2'
+implementation 'com.jakewharton.threetenabp:threetenabp:1.2.3'
 ```
 
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].
