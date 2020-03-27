@@ -4,7 +4,7 @@ Change Log
 Version 1.2.3 *(2020-03-27)*
 ----------------------------
 
- * Update ThreeTenBP dependency to 1.4.2 ([change log][threeten141]).
+ * Update ThreeTenBP dependency to 1.4.2 ([change log][threeten142]).
  
    This fixes a crash when attempting to deserialize a library type when using Java serialization
    and when your app is minified using R8's full mode.
@@ -105,3 +105,4 @@ Initial release.
  [threeten138]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.8
  [threeten140]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.0
  [threeten141]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.1
+ [threeten142]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.2
