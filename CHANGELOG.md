@@ -1,6 +1,16 @@
 Change Log
 ==========
 
+Version 1.2.4 *(2020-04-24)*
+----------------------------
+
+ * Update ThreeTenBP dependency to 1.4.4 ([change log][threeten144])
+ 
+   This adds Japanese Reiwa era.
+
+ * Update time zone data to 2020a.
+
+
 Version 1.2.3 *(2020-03-27)*
 ----------------------------
 
@@ -106,3 +116,4 @@ Initial release.
  [threeten140]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.0
  [threeten141]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.1
  [threeten142]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.2
+ [threeten144]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.4
