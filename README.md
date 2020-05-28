@@ -5,7 +5,7 @@ An adaptation of the JSR-310 backport for Android.
 
 **Attention**: Development on this library is winding down. Please consider switching to
 Android Gradle plugin 4.0, `java.time.*`, and its
-[core library desugaring](https://developer.android.com/studio/preview/features#j8-desugar) feature
+[core library desugaring](https://developer.android.com/studio/write/java8-support#library-desugaring) feature
 in the coming months.
 
 
