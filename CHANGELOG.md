@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 1.3.0 *(2020-10-26)*
+----------------------------
+
+ * Update ThreeTenBP dependency to 1.5.0 ([change log][threeten150])
+ * Update time zone data to 2020d.
+
+
 Version 1.2.4 *(2020-04-24)*
 ----------------------------
 
@@ -109,11 +116,12 @@ Initial release.
 
 
 
- [threeten133]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.3
- [threeten136]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.6
- [threeten137]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.7
- [threeten138]: http://www.threeten.org/threetenbp/changes-report.html#a1.3.8
- [threeten140]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.0
- [threeten141]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.1
- [threeten142]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.2
- [threeten144]: http://www.threeten.org/threetenbp/changes-report.html#a1.4.4
+ [threeten133]: https://www.threeten.org/threetenbp/changes-report.html#a1.3.3
+ [threeten136]: https://www.threeten.org/threetenbp/changes-report.html#a1.3.6
+ [threeten137]: https://www.threeten.org/threetenbp/changes-report.html#a1.3.7
+ [threeten138]: https://www.threeten.org/threetenbp/changes-report.html#a1.3.8
+ [threeten140]: https://www.threeten.org/threetenbp/changes-report.html#a1.4.0
+ [threeten141]: https://www.threeten.org/threetenbp/changes-report.html#a1.4.1
+ [threeten142]: https://www.threeten.org/threetenbp/changes-report.html#a1.4.2
+ [threeten144]: https://www.threeten.org/threetenbp/changes-report.html#a1.4.4
+ [threeten150]: https://www.threeten.org/threetenbp/changes-report.html#a1.5.0
