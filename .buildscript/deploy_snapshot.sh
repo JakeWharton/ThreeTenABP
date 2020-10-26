@@ -7,7 +7,7 @@
 
 SLUG="JakeWharton/ThreeTenABP"
 JDK="oraclejdk8"
-BRANCH="master"
+BRANCH="trunk"
 
 set -e
 
