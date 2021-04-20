@@ -1,6 +1,13 @@
 Change Log
 ==========
 
+Version 1.3.1 *(2021-04-20)*
+----------------------------
+
+ * Update ThreeTenBP dependency to 1.5.1 ([change log][threeten151])
+ * Update time zone data to 2021a.
+
+
 Version 1.3.0 *(2020-10-26)*
 ----------------------------
 
@@ -125,3 +132,4 @@ Initial release.
  [threeten142]: https://www.threeten.org/threetenbp/changes-report.html#a1.4.2
  [threeten144]: https://www.threeten.org/threetenbp/changes-report.html#a1.4.4
  [threeten150]: https://www.threeten.org/threetenbp/changes-report.html#a1.5.0
+ [threeten151]: https://www.threeten.org/threetenbp/changes-report.html#a1.5.1
