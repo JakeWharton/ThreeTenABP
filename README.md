@@ -64,7 +64,7 @@ Download
 --------
 
 ```groovy
-implementation 'com.jakewharton.threetenabp:threetenabp:1.4.3'
+implementation 'com.jakewharton.threetenabp:threetenabp:1.4.4'
 ```
 
 Snapshots of the development version are available in [Sonatype's `snapshots` repository][snap].

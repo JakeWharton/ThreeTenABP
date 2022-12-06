@@ -1,11 +1,18 @@
 Change Log
 ==========
 
+Version 1.4.4 *(2022-11-03)*
+----------------------------
+
+ * Update ThreeTenBP dependency to 1.6.5 ([change log][threeten165])
+ * Update time zone data to 2022g(gtz).
+
+
 Version 1.4.3 *(2022-11-03)*
 ----------------------------
 
  * Update ThreeTenBP dependency to 1.6.4 ([change log][threeten164])
- * Update time zone data to 2022f(etz).
+ * Update time zone data to 2022f(gtz).
 
 
 Version 1.4.2 *(2022-10-13)*
@@ -165,4 +172,5 @@ Initial release.
  [threeten162]: https://www.threeten.org/threetenbp/changes-report.html#a1.6.2
  [threeten163]: https://www.threeten.org/threetenbp/changes-report.html#a1.6.3
  [threeten164]: https://www.threeten.org/threetenbp/changes-report.html#a1.6.4
+ [threeten165]: https://www.threeten.org/threetenbp/changes-report.html#a1.6.5
 
