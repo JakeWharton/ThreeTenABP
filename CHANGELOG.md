@@ -1,7 +1,7 @@
 Change Log
 ==========
 
-Version 1.4.5 *(2022-11-03)*
+Version 1.4.5 *(2023-03-30)*
 ----------------------------
 
  * Update ThreeTenBP dependency to 1.6.7 ([change log][threeten167])
