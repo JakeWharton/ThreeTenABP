@@ -25,3 +25,5 @@ rm -r temp
 
 # Bump version in build file.
 sed -i -E "s/threetenbp:[^:]+:no-tzdb/threetenbp:${version}:no-tzdb/" build.gradle
+
+git status
