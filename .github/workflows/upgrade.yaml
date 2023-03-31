@@ -15,7 +15,6 @@ jobs:
 
       - uses: peter-evans/create-pull-request@v4
         with:
-          token: ${{ steps.generate_token.outputs.token }}
           commit-message: Bump ThreeTenBP dependency and embedded TZDB.
           title: Upgrade ThreeTenBP
           body: Bump dependency and embedded timezone database.
